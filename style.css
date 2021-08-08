@@ -1,0 +1,114 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background: url(./pexels-photo-1527934.jpeg) no-repeat fixed;
+    background-size: cover;
+} 
+
+.main-header{
+    font-family: 'Qahiri';
+    font-size: 4rem;
+    padding-left: 5px;
+    letter-spacing: 3px;
+}
+.main-ul{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 4vh;
+    right: 0;
+}
+.main-ul li{
+    list-style: none;
+    margin-left: 5vw;
+}
+.main-ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.main-ul li a:hover{
+    text-decoration: black underline;
+}
+.line1  , .line2 , .line3{
+    height: 5px;
+    width: 28px;
+    background-color: black;
+    margin-top: 3px
+}
+.toggle-button{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+.heading-container{
+    position: relative;
+    top: 30vh;
+}
+.main-text{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.link-li{
+    list-style: georgian;
+    margin-top: 10vh;
+    font-size: 1.5rem;
+    margin-left: 5vh;
+}
+.link-li a{
+    text-decoration: none;
+    color: black;
+}
+
+.link-li a:hover{
+    text-decoration: white underline;
+}
+span{
+    margin-top: 10px;
+    color: aqua;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 750px){
+    .toggle-button{
+        display: block;
+    }
+    .main-ul{
+        display: none;
+    }
+    .mobile-view{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        margin-top: 50px;
+        position: fixed;
+        height: 89%;
+        width: 40vw;
+        background: black;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .main-ul li a:hover{
+        text-decoration: aqua underline;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .main-text{
+        font-size: 1.5rem;
+    }
+    .mobile-view{
+        width: 60vw;
+    }
+    .main-header{
+        font-size: 3rem;
+    }
+}
